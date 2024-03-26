@@ -1,0 +1,1195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color:#fcf6f6;
+ --secondary-color: #050E1B;
+ --box-color: #050E1B;
+ --shadow: rgb(183, 181, 181);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: clamp(1rem, 0.5rem + 2.775vw, 2.75rem);
+    font-weight: 400;
+    background: none;
+}
+
+.links a:hover {
+  transition: 0.6s ease-in-out;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+  text-align: center;    
+}
+ 
+/*  HEADER  */
+header {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  top: -0.1%;
+  background: none;
+}
+ 
+/*  NAV BAR  */
+.nav-bar {
+  width: 100%;
+  height: 55px;
+  max-width: 80%;
+  margin: 1rem  auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+}
+
+.logo {
+  margin-top: -0.7rem;
+}
+ 
+.nav-bar  .logo  h1 {
+  font-size: clamp(1rem, 0.9143rem + 0.4286vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: black;
+  position: absolute;
+  background: none;
+}
+ 
+ 
+.nav-bar .links {
+  display: flex;
+  gap: 0.5rem;
+}
+ 
+.nav-bar .links li {
+  width: 5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-bar .links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.11rem;
+  position: absolute;
+  background: none;
+}
+
+.nav-bar .hamburger {
+  font-size: 1.4rem;
+  cursor: pointer; 
+  display: none;
+}
+
+/*  DROP  DOWN MENU  */
+.drop-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 12rem;
+  height: 0;
+  background: rgba(225, 225, 225, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transform: 0.2s;
+}
+
+.drop-menu.open {
+  height: 10rem;
+}
+
+.drop-menu li {
+  margin: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+/*   SECTION   */
+section {
+  margin: 0 10%;
+}
+
+/*   main wrapper start  */
+.wrapper {
+  overflow: hidden;
+  max-width: 40rem;
+  padding: 3rem 0 1rem 0;
+  margin-left: 3rem;
+}
+
+.top-line {
+  display: block;
+  position: relative;
+  font-size: clamp(1rem, 0.971rem + 1.143vw, 2rem);
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: var(--secondary-color);
+  padding-bottom: 2%;
+}
+
+.top-line:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 45px;
+  bottom: 10px;
+  background-color: var(--secondary-color);
+}
+
+ h1 {
+  display: block;
+  font-size: clamp(1.8rem, 1.171rem + 3.143vw, 4rem);
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding-bottom: 2%;
+ }
+
+ p {
+  display: block;
+  width: 100%;
+  font-size: clamp(1rem, 0.883rem + 0.584vw, 1.409rem);
+  font-weight: 300;
+  padding-bottom: 4%;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: rgb(230, 228, 228);
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 1em 0 0 0;
+  box-shadow: 3px 3px 6px var(--shadow);
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 0.1px;
+}
+/*   main wrapper end  */
+
+.background {
+  width: 24%;
+  margin: -29rem 0 -3rem auto;
+}
+
+.background img {
+  width: 100%;
+  opacity: 55%;
+  background: transparent;
+  position: relative;
+}
+
+/*  case study header start  */
+.s2 {
+  position: absolute;
+  margin: 0 10%;
+}
+
+.s2-header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+.s2-header::before {
+  content: '';
+  height: 2.3px;
+  width: 16%;
+  bottom: 16rem;
+  margin-right: 25px;
+  margin-top: 18px;
+  background-color: var(--secondary-color);
+}
+
+.s2-header:after {
+  content: '';
+  height: 2.3px;
+  width: 16%;
+  bottom: 18rem;
+  margin-left: 25px;
+  margin-top: 18px;
+  background-color: var(--secondary-color);
+}
+/*  case study header end  */
+
+/*  section 2 wrapper start  */
+.section2-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+/*  section 2 wrapper end  */
+
+/*JOSHUA RICARD.COM CASE STUDY START*/
+.jr-case {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  margin: 3rem 0 2rem 0;
+}
+
+.jr-case:hover .jrlink-wrapper {
+  width: 100%;
+  height: 30rem;
+} 
+
+.jr-case img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 5px 6px 30px var(--shadow);
+}
+
+.jrlink-wrapper {
+  width: 0;
+  height: 30rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden; 
+  transition: 0.8s ease-in-out;
+}
+
+
+.jrlink {
+  background-color: rgb(238, 236, 236);
+  width: clamp(10rem, 7.429rem + 12.857vw, 19rem);
+  height: clamp(13.5rem, 12.643rem + 4.286vw, 16.5rem);
+  border-radius: 15px; 
+  margin: 7.6rem 0rem 0 45rem; 
+  position: absolute;
+  transition: all 0.2s ease;
+  box-shadow: 9px 10px 10px rgb(57, 57, 57);
+}
+
+.jrlink h1 {
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1.5rem);
+  letter-spacing: 0.6px;
+  margin: 0.2rem 0 -0.4rem 0 ;
+  text-align: center;
+  background: none;
+  color: black;
+}
+
+.jrlink h2 {
+  font-size: clamp(0.7rem, 0.557rem + 0.714vw, 1.2rem);
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.3rem;
+  background: none;
+  color: black;
+}
+
+.jrlink h3 {
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1.5rem);
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-left: 3rem;
+  background: none;
+  color: black;
+}
+
+.jrlink ul {
+  margin: 0 0 0 3rem;
+  background: none;
+}
+
+.jrlink ul li {
+  list-style: disc;
+  font-size: clamp(0.6rem, 0.486rem + 0.571vw, 1rem);
+  font-weight: 300;
+  background: none;
+  color: black;
+}
+
+#jr-case-btn {
+  padding: 10px 20px;
+  background-color: #050E1B;
+  color: #fcf6f6;
+  border-radius: 10px;
+  margin-left: 4rem;
+  font-size: clamp(0.9rem, 0.837rem + 0.314vw, 1.12rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/*JOSHUA RICARD.COM CASE STUDY END*/
+
+/*DEMERARA BANK CASE STUDY START*/
+.dbl-case {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  margin: 4rem 0 2rem 0;
+}
+
+.dbl-case:hover .dbl-link-wrapper {
+  width: 100%;
+  height: 30rem;
+} 
+
+.dbl-case img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 5px 6px 30px var(--shadow);
+}
+
+.dbl-link-wrapper {
+  width: 0;
+  height: 30rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden; 
+  transition: 0.8s ease;
+}
+
+
+.dbl-link {
+  background-color: rgb(238, 236, 236);
+  width: clamp(10rem, 7.429rem + 12.857vw, 19rem);
+  height: clamp(13.5rem, 12.643rem + 4.286vw, 16.5rem);
+  border-radius: 15px; 
+  margin: 7.6rem 0rem 0 45rem; 
+  position: absolute;
+  transition: all 0.2s ease;
+  box-shadow: 9px 10px 10px rgb(57, 57, 57);
+}
+
+.dbl-link h1 {
+  font-size: clamp(0.8rem, 0.629rem + 0.857vw, 1.4rem);
+  letter-spacing: 0.2px;
+  margin: 0.4rem 0 -0.5rem 0 ;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  background: none;
+  color: black;
+}
+
+.dbl-link p {
+  font-size: clamp(0.7rem, 0.557rem + 0.714vw, 1.2rem);
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.7rem;
+  background: none;
+  color: black;
+  max-width: 15rem;
+  margin: 0.6rem 0 0 2rem;
+}
+
+
+.dbl-link h3 {
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1.5rem);
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: -0.2rem 0 0 3rem;
+  background: none;
+  color: black;
+}
+
+.dbl-link ul {
+  margin: 0.3rem 0 0rem 3rem;
+  background: none;
+}
+
+.dbl-link  ul li {
+  list-style: disc;
+  font-size: clamp(0.6rem, 0.486rem + 0.571vw, 1rem);
+  font-weight: 300;
+  margin-left: 1.11rem;
+  background: none;
+  color: black;
+}
+
+#dbl-case-btn {
+  padding: 10px 20px;
+  background-color: #050E1B;
+  color: #fcf6f6;
+  border-radius: 10px;
+  margin-left: 4rem;
+  font-size: clamp(0.9rem, 0.837rem + 0.314vw, 1.12rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/*DEMERARA BANK CASE STUDY END*/
+
+/*HEALTH HUB CASE STUDY START*/
+.hh-case {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  margin: 4rem 0 5rem 0;
+}
+
+.hh-case:hover .hh-link-wrapper {
+  width: 100%;
+  height: 30rem;
+} 
+
+.hh-case img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 5px 6px 30px var(--shadow);
+}
+
+.hh-link-wrapper {
+  width: 0;
+  height: 30rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden; 
+  transition: 0.8s ease;
+}
+
+
+.hh-link {
+  background-color: rgb(238, 236, 236);  
+  width: clamp(10rem, 7.429rem + 12.857vw, 19rem);
+  height: clamp(13.5rem, 12.643rem + 4.286vw, 16.5rem);
+  border-radius: 15px; 
+  margin: 7.6rem 0rem 0 45rem; 
+  position: absolute;
+  transition: all 0.2s ease;
+  box-shadow: 9px 10px 10px rgb(57, 57, 57);
+}
+
+.hh-link h1 {
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1.5rem);
+  letter-spacing: 0.2px;
+  margin: 0.4rem 0 -0.5rem 0 ;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  background: none;
+  color: black;
+}
+
+.hh-link p {
+  font-size: clamp(0.7rem, 0.557rem + 0.714vw, 1.2rem);
+  font-weight: 200;
+  padding: 0.6rem 0;
+  margin-bottom: -0.6rem;
+  text-align: center;
+  background: none;
+}
+
+.hh-link h3 {
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1.5rem);
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0 0 0 3rem;
+  background: none;
+  color: black;
+}
+
+.hh-link ul {
+  margin: -0.1rem 0 0 3rem;
+  background: none;
+}
+
+.hh-link  ul li {
+  list-style: disc;
+  font-size: clamp(0.6rem, 0.486rem + 0.571vw, 1rem);
+  font-weight: 300;
+  margin-left: 1.11rem;
+  margin-bottom: -0.4rem;
+  background: none;
+  color: black;
+}
+
+#hh-case-btn {
+  padding: 10px 20px;
+  background-color: #050E1B;
+  color: #fcf6f6;
+  border-radius: 10px;
+  margin-left: 4rem;
+  font-size: clamp(0.9rem, 0.837rem + 0.314vw, 1.12rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/*HEALTH HUB CASE STUDY END*/
+
+/*  footer  */
+.footer {
+  position: relative;
+  height: 5rem;
+  background-color: #050E1B;
+  overflow: hidden;
+}
+
+.footer h1 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  background: none;
+  padding-top: 1.5rem;
+}
+
+
+
+/*  LAPTOP  */
+@media(max-width: 1030px) {
+  /* wrapper start */
+  .wrapper {
+    max-width: 35rem;
+  }
+  .top-line {
+    font-size: 1.3rem;
+  }
+  .top-line:after {
+    height: 2px;
+    bottom: 15px;
+  }
+  h1 {
+    font-size: 2.9rem;
+  }
+  p {
+    font-size: 1.15rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+  .background {
+    width: 22%;
+    margin: -20.9rem 0 1rem auto;
+  }
+  /* wrapper end */
+
+  /* case study header start */
+  .s2-header {
+    font-size: 1.4rem;
+  }
+  .s2-header::before {
+    margin-top: 15px;
+  }
+  .s2-header::after {
+    margin-top: 15px;
+  }
+  /* case study header end */
+
+  /* jr-case study start */ 
+  .jr-case:hover .jrlink-wrapper {
+    height: 25rem;
+  }
+  .jr-case img {
+    height: 25rem;
+  }
+  .jrlink-wrapper {
+    height: 25rem;
+  }
+  .jrlink {
+    margin: 5rem 0 0 27rem;
+  }
+  .jrlink h1 {
+    padding-top: 0.5rem;
+  }
+  #jr-case-btn {
+    margin-left: 2.8rem;
+  }
+  /* jr-case study end */
+
+  /* dbl-case study start */
+  .dbl-case {
+    margin: 4rem 0 -4.8rem 0;
+  }
+  .dbl-case:hover .dbl-link-wrapper {
+    height: 25rem;
+  }
+  .dbl-case img {
+    height: 25rem;
+  }
+  .dbl-link-wrapper {
+    height: 25rem;
+  }
+  .dbl-link {
+    margin: 5rem 0 0 27rem;
+  }
+  .dbl-link p {
+    margin: 0.6rem 0 0 0.3rem;
+  }
+  #dbl-case-btn {
+    margin-left: 2.8rem;
+  }
+  /* dbl-case study end */
+  .hh-case {
+    margin: 4rem 0 1rem 0;
+  }
+  .hh-case:hover .hh-link-wrapper {
+    height: 25rem;
+  }
+  .hh-case img {
+    height: 25rem;
+  }
+  .hh-link-wrapper {
+    height: 25rem;
+  }
+  .hh-link {
+    margin: 5rem 0 0 27rem;
+  }
+  .hh-link > h3 {
+    margin-top: 0.3rem;
+  }
+  #hh-case-btn {
+    margin-left: 2.8rem;
+  }
+  /* hh-case study start */
+  /* hh-case study end */
+}
+
+/*  TABLET  */
+@media(max-width: 770px) {
+  .nav-bar .links li a {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    padding: 1.5rem 0 1rem 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    max-width: 75%;
+    font-size: 1.03rem;
+  }
+
+  .background {
+    width: 26%;
+    margin: -19rem 0 0 auto;
+  }
+  .background img {
+    width: 100%;
+    background: transparent;
+  }
+  
+  /* jr-case study start */ 
+  .jr-case:hover .jrlink-wrapper {
+    height: 20rem; 
+  }
+  .jr-case img {
+    height: 20rem;
+  }
+  .jrlink-wrapper {
+    height: 20rem;
+  }
+  .jrlink {
+    margin: 3rem 0 0 19rem;
+  }
+  .jrlink h1 {
+    padding-top: 0.6rem;
+  }
+  #jr-case-btn {
+    margin-left: 2.6rem;
+    padding: 9px 10px;
+  }
+  /* jr-case study end */
+
+  /* dbl-case study start */ 
+  .dbl-case {
+    height: 20rem;
+    margin: 4rem 0 4rem 0;
+  }
+  .dbl-case:hover .dbl-link-wrapper {
+    height: 20rem;
+  }
+  .dbl-case img {
+    height: 20rem;
+  }
+  .dbl-link-wrapper {
+    height: 20rem;
+  }
+  .dbl-link {
+    margin: 3rem 0 0 19rem;
+  }
+  .dbl-link h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.2rem;
+  }
+  .dbl-link p {
+    max-width: fit-content;
+    line-height: 1.1rem;
+  }
+  #dbl-case-btn {
+    margin-left: 2.6rem;
+    padding: 9px 10px;
+  }
+  /* dbl-case study end */
+
+  /* hh-case study start */ 
+  .hh-case {
+    margin: 4rem 0 -4rem 0;
+  }
+  .hh-case:hover .hh-link-wrapper {
+    height: 20rem;
+  }
+  .hh-case img {
+    height: 20rem;
+  }
+  .hh-link-wrapper {
+    height: 20rem;
+  }
+  .hh-link {
+    margin: 3rem 0 0 19rem;
+  }
+  .hh-link h1 {
+    padding-top: 1.5rem;
+  }
+  .hh-link p {
+    line-height: 1.2rem;
+    max-width: fit-content;
+  }
+  #hh-case-btn {
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    padding: 9px 10px;
+  }
+  /* hh-case study end */
+}
+
+/*  MOBILE DESIGN  */
+/*  MOBILE LARGE  */
+@media(max-width: 430px) {
+  /* do not touch */
+  .nav-bar .links {
+    display: none;
+  }
+  .nav-bar .hamburger {
+    display: block;
+  }
+  .drop-menu {
+    display: block;
+  }
+  /* do not touch */
+
+  section {
+    margin: 0 1%;
+  }
+  .logo {
+    margin-top: -1.8rem;
+  }
+  .wrapper {
+    max-width: 25rem;
+  }
+  .top-line {
+    font-size: 1.01rem;
+  }
+  .top-line:after {
+    width: 35px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.6rem;
+    padding: 7px 7px;
+  }
+  .background {
+    width: 30%;
+    margin: -14.6rem 0 2rem auto;
+  }
+  .s2-header {
+    font-size: 1rem;
+  } 
+  .s2-header::before {
+    margin-top: 11.5px;
+    margin-right: 15px;
+  }
+  .s2-header::after {
+    margin-top: 11.5px;
+    margin-left: 15px;
+  }
+  /* jr-case study start */ 
+  .jr-case:hover .jrlink-wrapper {
+    height:  15rem; 
+  }
+  .jr-case img {
+    height: 15rem;
+  }
+  .jrlink-wrapper {
+    height: 15rem;
+  }
+  .jrlink {
+    height: 12rem;
+    margin: 1.5rem 0 0 11.5rem;
+  }
+  .jrlink h1 {
+    padding-top: 0.6rem;
+  }
+  .jrlink h2 {
+    line-height: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.4rem;
+  }
+  .jrlink ul {
+    margin: 0 0 -0.5rem 2.5rem;
+    }
+  #jr-case-btn {
+    margin-left: 1.5rem;
+    padding: 9px 10px;
+  }
+  /* jr-case study end */
+  
+  /* dbl-case study start */ 
+  .dbl-case {
+    margin: 0 0 -3rem 0;
+  }
+  .dbl-case:hover .dbl-link-wrapper {
+    height:  15rem; 
+  }
+  .dbl-case img {
+    height: 15rem;
+  }
+  .dbl-link-wrapper {
+    height: 15rem;
+  }
+  .dbl-link {
+    height: 10.5rem;
+    margin: 1.5rem 0 0 11.5rem;
+  }
+  .dbl-link h1 {
+    padding-top: 0.4rem;
+  }
+  .dbl-link p {
+    line-height: 0.8rem;
+  }
+  .dbl-link ul {
+    margin: 0 0 -0.4rem 2.5rem;
+    }
+  #dbl-case-btn {
+    margin-left: 1.5rem;
+    padding: 9px 10px;
+  }
+  /* dbl-case study end */
+
+  /* hh-case study start */ 
+  .hh-case {
+    height: 15rem;
+    margin: 0rem 0 3rem 0rem;
+  }
+  .hh-case:hover .hh-link-wrapper {
+    height:  15rem; 
+  }
+  .hh-case img {
+    height: 15rem;
+  }
+  .hh-link-wrapper {
+    height: 15rem;
+  }
+  .hh-link {
+    height: 10.5rem;
+    margin: 1.5rem 0 0 11.5rem;
+  }
+  .hh-link h1 {
+    padding-top: 0.4rem;
+  }
+  .hh-link p {
+    line-height: 0.8rem;
+  }
+  .hh-link ul {
+    margin: 0 0 -0.4rem 2.5rem;
+    }
+  #hh-case-btn {
+    margin-left: 1.5rem;
+    padding: 9px 10px;
+  }
+  /* hh-case study end */
+  /* footer */
+  .footer h1 {
+    font-size: 0.8rem;
+  }
+}
+
+/*  MOBILE MEDIUM  */
+@media(max-width: 380px) {
+  .top-line:after {
+    width: 1.3rem;
+    height: 1.5px;
+  }
+  /* jr-case study start */ 
+  .jr-case {
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .jr-case:hover .jrlink-wrapper {
+    height: 13rem; 
+  }
+  .jr-case img {
+    height: 13rem;
+  }
+  .jrlink-wrapper {
+    height: 13rem;
+  }
+  .jrlink {
+    height: 10rem;
+    margin: 1.7rem 0 0 9rem;
+  }
+  .jrlink h1 {
+    padding-top: 0.1rem;
+  }
+  .jrlink h2 {
+    line-height: 0.9rem;
+  }
+  .jrlink h3 {
+    margin: -0.1rem 0 0 1.8rem;
+  }
+  .jrlink ul {
+    margin: 0 0 -1.2rem 2.5rem;
+    }
+  #jr-case-btn {
+    font-size: 0.7rem;
+    margin-left: 2rem;
+    padding: 6px 9px;
+  }
+  /* jr-case study end */
+  
+  /* dbl-case study start */ 
+  .dbl-case {
+    height: 13rem;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .dbl-case:hover .dbl-link-wrapper {
+    height:  13rem; 
+  }
+  .dbl-case img {
+    height: 13rem;
+  }
+  .dbl-link-wrapper {
+    height: 13rem;
+  }
+  .dbl-link {
+    border-radius: 9px;
+    height: 9rem;
+    margin: 1.7rem 0 0 9rem;
+  }
+  .dbl-link h1 {
+    padding-top: 0.3rem;
+    padding-bottom: 0.35rem;
+    font-size: 0.79rem;
+  }
+  .dbl-link p {
+    margin-top: -0.01rem;
+    line-height: 0.8rem;
+  }
+  .dbl-link h3 {
+    margin-left: 1.8rem;
+  }
+  .dbl-link ul {
+    margin: 0.2rem 0 -0.8rem 1.5rem;
+    }
+  #dbl-case-btn {
+    font-size: 0.7rem;
+    margin-left: 2rem;
+    padding: 6px 9px;
+  }
+  /* dbl-case study end */
+
+  /* hh-case study start */ 
+  .hh-case {
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .hh-case:hover .hh-link-wrapper {
+    height:  13rem; 
+  }
+  .hh-case img {
+    height: 13rem;
+  }
+  .hh-link-wrapper {
+    height: 13rem;
+  }
+  .hh-link {
+    height: 9.7rem;
+    margin: 1.7rem 0 0 9rem;
+  }
+  .hh-link h1 {
+    padding-top: 0.2rem;
+  }
+  .hh-link p {
+    line-height: 0.8rem;
+  }
+  .hh-link h3 {
+    margin-left: 1.8rem;
+  }
+  .hh-link ul {
+    margin: 0.2rem 0 -0.8rem 1.5rem;
+    }
+  #hh-case-btn {
+    font-size: 0.7rem;
+    margin-left: 2rem;
+    padding: 6px 9px;
+  }
+  /* hh-case study end */
+}
+
+/*  MOBLE SMALL  */
+@media(max-width: 330px) {
+  .wrapper {
+    margin-left: 1rem;
+  }
+  .background {
+    width: 36%;
+    margin: -13rem 0 2rem auto;
+  }
+  /* jr-case study start */ 
+  .jr-case {
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .jr-case:hover .jrlink-wrapper {
+    height:  12rem; 
+  }
+  .jr-case img {
+    height: 12rem;
+  }
+  .jrlink-wrapper {
+    height: 12rem;
+  }
+  .jrlink {
+    margin: 0.5rem 0 0 6.91rem;
+  }
+  .jrlink h2 {
+    line-height: 0.8rem;
+    padding-bottom: 0.2rem;
+  }
+  .jrlink h3 {
+    margin-left: 1.8rem;
+  }
+  .jrlink ul {
+    margin: 0.2rem 0 -0.9rem 1.5rem;
+    }
+  #jr-case-btn {
+    font-size: 0.7rem;
+    margin-left: 1.7rem;
+    padding: 6px 9px;
+  }
+  /* jr-case study end */
+
+  /* dbl-case study start */ 
+  .dbl-case {
+    height: 12rem;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .dbl-case:hover .dbl-link-wrapper {
+    height:  12rem; 
+  }
+  .dbl-case img {
+    height: 12rem;
+  }
+  .dbl-link-wrapper {
+    height: 12rem;
+  }
+  .dbl-link {
+    border-radius: 0.6rem;
+    height: 8.8rem;
+    margin: 1.3rem 0 0 6.91rem;
+  }
+  .dbl-link h1 {
+    padding-top: -0.4rem;
+  }
+  .dbl-link p {
+    line-height: 0.8rem;
+    padding-bottom: 0.5rem;
+    margin-left: 0.2rem;
+  }
+  .dbl-link h3 {
+    margin-left: 1.8rem;
+  }
+  .dbl-link ul {
+    margin: 0.2rem 0 -1rem 1.5rem;
+    }
+  #dbl-case-btn {
+    font-size: 0.7rem;
+    margin-left: 1.7rem;
+    padding: 6px 9px;
+  }
+  /* dbl-case study end */
+
+  /* hh-case study start */ 
+  .hh-case {
+    margin: 1.5rem 0 2.5rem 0;
+  }
+  .hh-case:hover .hh-link-wrapper {
+    height:  12rem; 
+  }
+  .hh-case img {
+    height: 12rem;
+  }
+  .hh-link-wrapper {
+    height: 12rem;
+  }
+  .hh-link {
+    border-radius: 0.6rem;
+    height: 9.5rem;
+    margin: 1.3rem 0 0 6.91rem;
+  }
+  .hh-link h1 {
+    padding-top: 0.2rem;
+  }
+  .hh-link p {
+    line-height: 0.8rem;
+    padding-bottom: 0.5rem;
+    margin-left: 0.2rem;
+  }
+  .hh-link h3 {
+    margin-left: 1.8rem;
+  }
+  .hh-link ul {
+    margin: 0.2rem 0 -0.8rem 1.5rem;
+    }
+  #hh-case-btn {
+    font-size: 0.7rem;
+    margin-left: 1.7rem;
+    padding: 6px 9px;
+  }
+  /* hh-case study end */
+}
+
+
+
+
+ 

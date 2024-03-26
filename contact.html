@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me | UX/UI Designer</title>
+    <link rel="icon" href="../images/jr.com/my logo.png">
+    <link rel="stylesheet" href="../Jr.com css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <h1>Joshua richard</h1>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      
+        <div class="drop-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+    </header>  
+    <section>
+      <div class="contact-section-wrapper">
+        <div class="img-section">
+          <img src="../images/jr.com/jr logo.png">
+        </div>
+        <div class="form-section-wrapper">
+          <div class="form-section">
+              <h1>Get in touch!</h1>
+              <p>Do you have a project, need a designer, or looking for a frontend developer? Drop me an email!</p>
+              <div class="contact-form">
+                  <form target="_blank" action="https://formsubmit.co/joshua.designs8@gmail.com" method="POST">
+                      <input class="fullname" type="text" name="name" placeholder="Your name" required>
+                      <input class="mail" type="email" name="email" placeholder="Your email" required>
+                      <textarea class="text" name="message" placeholder="Write your message here" required></textarea>
+                      <button class="form-btn" type="submit">Send email</button>
+                 </form>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  <script>
+    const hamburger = document.querySelector('.hamburger')
+    const hamburgerIcon = document.querySelector('.hamburger i')
+    const link = document.querySelector('.links')
+    const dropMenu = document.querySelector('.drop-menu')
+  
+    hamburger.onclick = function () {
+      dropMenu.classList.toggle('open')
+      const isOpen = dropMenu.classList.contains('open')
+  
+      hamburgerIcon.classList = isOpen 
+      ?'fa-solid fa-x'
+      :'fa-solid fa-bars'
+    }
+</script>
+</body>
+</html>

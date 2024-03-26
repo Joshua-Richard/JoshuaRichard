@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Jr.com css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Joshua Richaard | UX/UI Desigher</title>
+    <link rel="icon" href="../images/jr.com/my logo.png">
+</head>
+<body>
+<header>
+  <div class="nav-bar">
+    <div class="logo">
+      <h1>Joshua richard</h1>
+    </div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="drop-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </div>
+</header>
+<section>
+  <div class="wrapper">
+  <span class="top-line">Hello</span>
+  <h1>I'm <span class="multitext"></span></h1>
+  <p>
+   I'm a UX/UI Designer and Frontend developer with a mission to design memorable products and make life easier.
+  </p>
+  <div class="button">
+    <a class="btn" download href="../images/jr.com/ux-ui resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+  </div>
+</div>
+</section>
+<div class="background">
+  <img src="../images/jr.com/tree 2.png">
+</div>
+<span class="s2-header">CASE STUDY</span>
+<section> 
+  <div class="section2-wrapper">
+    <div class="jr-case">
+      <img src="../images/jr.com/jr.com wallpaper.png">
+      <div class="jrlink-wrapper">
+        <div class="jrlink">
+          <h1>Joshuarichard.com</h1>
+          <h2>Wanna see how i built this website? Take a look</h2>
+          <h3>Roles</h3>
+            <ul>
+              <li>UI Design</li>
+              <li>UX Design</li>
+              <li>Frontend Development</li>
+            </ul><br>
+          <a href="joshua.html" id="jr-case-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dbl-case">
+      <img src="../images/dbl/DBL wallpaper.png">
+      <div class="dbl-link-wrapper">
+        <div class="dbl-link">
+          <h1>Demerara Bank Limited</h1>
+          <p>A new look but the same great service.</p>
+          <h3>Role</h3>
+            <ul>
+              <li>UI Design</li>
+            </ul><br>
+          <a href="DBL.html" id="dbl-case-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hh-case">
+      <img src="../images/health hub/health hub wallpaper.png">
+      <div class="hh-link-wrapper">
+        <div class="hh-link">
+          <h1>Health Hub</h1>
+          <p>Aims to promote a healthy lifestyle and well-being.</p>
+          <h3>Role</h3>
+            <ul>
+              <li>UX Design</li>
+              <li>UI Design</li>
+            </ul><br>
+          <a href="hh.html" id="hh-case-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer">
+      <h1>Made by Joshua Richard</h1>
+  </div>
+</footer>
+<script>
+        const hamburger = document.querySelector('.hamburger')
+        const hamburgerIcon = document.querySelector('.hamburger i')
+        const link = document.querySelector('.links')
+        const dropMenu = document.querySelector('.drop-menu')
+      
+        hamburger.onclick = function () {
+          dropMenu.classList.toggle('open')
+          const isOpen = dropMenu.classList.contains('open')
+      
+          hamburgerIcon.classList = isOpen 
+          ?'fa-solid fa-x'
+          :'fa-solid fa-bars'
+        }
+</script>
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
+  let typed = new Typed('.multitext', {
+  strings: ['Joshua', 'a UX Designer', 'a UI Designer', 'a coder'],
+  typeSpeed: 50,
+  backSpeed:50,
+  loop:true
+});
+</script>
+</body>
+</html>
+
+
