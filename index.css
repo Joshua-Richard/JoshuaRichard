@@ -623,7 +623,7 @@ section {
     height: 25rem;
   }
   .jrlink {
-    margin: 5rem 0 0 25rem;
+    margin: 5rem 0 0 27rem;
   }
   .jrlink h1 {
     padding-top: 0.5rem;
@@ -682,7 +682,7 @@ section {
 }
 
 /*  TABLET  */
-@media(max-width: 770px) {
+@media(max-width: 900px) {
   .nav-bar .links li a {
     font-size: 1rem;
   }
