@@ -681,8 +681,23 @@ section {
   /* hh-case study end */
 }
 
+@media(max-width: 910px) {
+  .jrlink {
+    margin: 5rem 0 0 57%;
+  }
+
+  .dbl-link {
+    margin: 5rem 0 0 57%;
+  }
+
+  .hh-link {
+    margin: 5rem 0 0 57%;
+  }
+} 
+
+
 /*  TABLET  */
-@media(max-width: 900px) {
+@media(max-width: 780px) {
   .nav-bar .links li a {
     font-size: 1rem;
   }
@@ -718,7 +733,7 @@ section {
     height: 20rem;
   }
   .jrlink {
-    margin: 3rem 0 0 19rem;
+    margin: 3rem 0 0 55%;
   }
   .jrlink h1 {
     padding-top: 0.6rem;
@@ -744,7 +759,7 @@ section {
     height: 20rem;
   }
   .dbl-link {
-    margin: 3rem 0 0 19rem;
+    margin: 3rem 0 0 55%;
   }
   .dbl-link h1 {
     padding-top: 1.5rem;
@@ -774,7 +789,7 @@ section {
     height: 20rem;
   }
   .hh-link {
-    margin: 3rem 0 0 19rem;
+    margin: 3rem 0 0 55%;
   }
   .hh-link h1 {
     padding-top: 1.5rem;
@@ -858,7 +873,7 @@ section {
   }
   .jrlink {
     height: 12rem;
-    margin: 1.5rem 0 0 11.5rem;
+    margin: 1.5rem 0 0 50%;
   }
   .jrlink h1 {
     padding-top: 0.6rem;
@@ -892,7 +907,7 @@ section {
   }
   .dbl-link {
     height: 10.5rem;
-    margin: 1.5rem 0 0 11.5rem;
+    margin: 1.5rem 0 0 50%;
   }
   .dbl-link h1 {
     padding-top: 0.4rem;
@@ -925,7 +940,7 @@ section {
   }
   .hh-link {
     height: 10.5rem;
-    margin: 1.5rem 0 0 11.5rem;
+    margin: 1.5rem 0 0 50%;
   }
   .hh-link h1 {
     padding-top: 0.4rem;
@@ -968,7 +983,7 @@ section {
   }
   .jrlink {
     height: 10rem;
-    margin: 1.7rem 0 0 9rem;
+    margin: 1.7rem 0 0 44%;
   }
   .jrlink h1 {
     padding-top: 0.1rem;
@@ -1006,7 +1021,7 @@ section {
   .dbl-link {
     border-radius: 9px;
     height: 9rem;
-    margin: 1.7rem 0 0 9rem;
+    margin: 1.7rem 0 0 44%;
   }
   .dbl-link h1 {
     padding-top: 0.3rem;
@@ -1045,7 +1060,7 @@ section {
   }
   .hh-link {
     height: 9.7rem;
-    margin: 1.7rem 0 0 9rem;
+    margin: 1.7rem 0 0 44%;
   }
   .hh-link h1 {
     padding-top: 0.2rem;
