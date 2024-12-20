@@ -280,7 +280,7 @@ section {
 }
 
 /*  TABLET */
-@media(max-width: 770px) {
+@media(max-width: 840px) {
   section {
     margin: 0 7%;
   } 
