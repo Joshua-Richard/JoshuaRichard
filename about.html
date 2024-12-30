@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" lan="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Jr.com css/about.css">
+    <title>About me | UX/UI Designer</title>
+    <link rel="icon" href="../images/jr.com/my logo.png">
+    <style type="text/css;">
+        .styles-module_blinkingCursor__yugAC{color:inherit;font:inherit;left:3px;line-height:inherit;opacity:1;position:relative;top:0}.styles-module_blinking__9VXRT{animation-duration:.8s;animation-iteration-count:infinite;animation-name:styles-module_blink__rqfaf}@keyframes styles-module_blink__rqfaf{0%{opacity:1}to{opacity:0}}
+    </style>
+</head>
+<body>
+<header>
+        <div class="nav-bar">
+           <div class="logo">
+             <h1>Joshua richard</h1>
+           </div>
+           <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+           <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+           </div>
+        </div>
+       
+         <div class="drop-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+</header>
+
+<section> 
+    <div class="s1-wrapper">
+        <div class="img">
+            <img src="../images/jr.com/about img.png">
+         </div>
+        <div class="introduction">
+            <h1>
+               Hey i'm joshua. nice to meet you!
+            </h1>
+            <p class="para-1">
+               I'm a self-taught designer crafting simple and effective solutions for complex systems.
+               I'm  passionate about creating user-centered experiences that are both beautiful and functional.
+            </p>
+
+            <br>
+            <p class="para-2">
+                My educational background consisted of Leaser Edge Academic Collage(L.E.A.C) where I graduated with a CSEC Certificate.
+                After which I moved on to a higher education with ALISON University where I learnt multiple Programing languages such as HTML, CSS, JAVASCRIPT, PYTHON, SASS/SCSS and etc.
+                As well as skill in creating graphic designs, web and mobile designs and responsive designs.
+            </p>
+
+            <br>
+            <ul class="aboutme-list">
+                <li class="item-1">
+                    I got into UX/UI while learning to become a front-end developer after I saw a job post for a UX/UI designer with front-end experience which piqued my interest.
+                </li>
+
+                <li class="item-2">
+                    My main goal is to become a full-stack developer.
+                </li>
+
+                <li class="item-3">
+                    I am currently learning React and PHP. 
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="languages">
+        <h2>I Speak</h2>
+        <div class="languages-img">
+            <img class="english" src="../images/jr.com/english.png">
+            <img class="japanese" src="../images/jr.com/japanese.png">
+        </div>
+    </div>    
+</section>
+<hr class="divider">
+<section>
+    <div class="s2-wrapper">
+        <div class="section-2">           
+                <h1> What i do when im not working </h1> 
+                <p>If you can't find me at my computer, I'm either out on a walk or Reading a web novel.</p>
+                <ul class="list">
+                    <li>
+                        Outsude of UX/UI I'm passionate about coding and what i'm able to create with only a few lines of code.
+                    </li>
+                    <li>
+                        Fun fact about me I like music and so i've learnt to play drums and Piano but i'm not very good at either
+                    </li>
+                </ul>
+        </div>
+    </div>
+</section>
+<hr class="divider">
+<section>
+    <div class="final-wrapper">
+        <div class="final-section">
+                <h2>Would you like to get in touch?</h2>
+                <h1>
+                    joshua.designs8@gmail.com
+                </h1>
+        </div>
+    </div>
+</section>
+
+<script>
+    const hamburger = document.querySelector('.hamburger')
+    const hamburgerIcon = document.querySelector('.hamburger i')
+    const link = document.querySelector('.links')
+    const dropMenu = document.querySelector('.drop-menu')
+  
+    hamburger.onclick = function () {
+      dropMenu.classList.toggle('open')
+      const isOpen = dropMenu.classList.contains('open')
+  
+      hamburgerIcon.classList = isOpen 
+      ?'fa-solid fa-x'
+      :'fa-solid fa-bars'
+    }
+</script>
+</body>
+</html>
